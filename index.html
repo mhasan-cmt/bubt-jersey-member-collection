@@ -12,7 +12,7 @@
     />
     <style>
       body {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         margin: 0;
         padding: 0;
         background-color: #f4f4f9;
@@ -25,42 +25,49 @@
       h2 {
         color: #6c757d;
         font-weight: 500;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
       .iframe-container {
         border: 2px solid #007bff;
         border-radius: 8px;
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
       }
       iframe {
         width: 100%;
-        height: auto;
-        aspect-ratio: 16/9;
+        height: 80vh;
         border: none;
       }
-      footer {
-        margin-top: 30px;
-        color: #6c757d;
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 1.8rem; /* Adjust font size for smaller screens */
+        }
+        h2 {
+          font-size: 1.2rem; /* Adjust font size for smaller screens */
+        }
+        .iframe-container {
+          border: 1px solid #007bff; /* Reduce border width for smaller screens */
+        }
       }
     </style>
   </head>
   <body>
-    <div class="container py-5">
+    <div class="container py-4">
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-12 text-center">
           <h1>BUBT, Department of CSE (42/03)</h1>
           <h2>Jersey Information</h2>
         </div>
       </div>
       <div class="row justify-content-center">
-        <div class="col-lg-10 iframe-container">
+        <div class="col-lg-10 col-md-12 iframe-container">
           <iframe
             src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTDyEqw9Paq05btAGwvJF1RVUZPm3xgU8DYE8MJRb1wJpAgXnGgN0qDqt4_xe1IXqSj4emWDUbw6ZAh/pubhtml?gid=1251693028&amp;single=true&amp;widget=true&amp;headers=false"
           ></iframe>
         </div>
       </div>
-      <footer class="text-center">
+      <footer class="text-center mt-4">
         &copy; 2024 BUBT, Department of CSE. All rights reserved.
       </footer>
     </div>
