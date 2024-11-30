@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Live Google Sheet</title>
+    <title>Jersey Information</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -39,15 +39,32 @@
         height: 80vh;
         border: none;
       }
+      .jersey-demo {
+        margin-top: 20px;
+        text-align: center;
+      }
+      .jersey-demo img {
+        max-width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+      }
+      .info-section {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
       @media (max-width: 768px) {
         h1 {
-          font-size: 1.8rem; /* Adjust font size for smaller screens */
+          font-size: 1.8rem;
         }
         h2 {
-          font-size: 1.2rem; /* Adjust font size for smaller screens */
+          font-size: 1.2rem;
         }
         .iframe-container {
-          border: 1px solid #007bff; /* Reduce border width for smaller screens */
+          border: 1px solid #007bff;
         }
       }
     </style>
@@ -65,6 +82,45 @@
           <iframe
             src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTDyEqw9Paq05btAGwvJF1RVUZPm3xgU8DYE8MJRb1wJpAgXnGgN0qDqt4_xe1IXqSj4emWDUbw6ZAh/pubhtml?gid=1251693028&amp;single=true&amp;widget=true&amp;headers=false"
           ></iframe>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-12 jersey-demo">
+          <h2>Jersey Demo</h2>
+          <img
+            src="jersey-demo.jpg"
+            alt="Jersey Demo"
+          />
+          <p>Here is a preview of the jersey design for the department.</p>
+        </div>
+        <div class="col-lg-6 col-md-12 info-section">
+          <h2>About the Jersey</h2>
+          <p>
+            The jersey represents the unity and identity of the Department of
+            CSE, Batch 42/03. Designed with high-quality materials, it ensures
+            comfort and durability while showcasing our batch logo and colors.
+          </p>
+          <p>
+            <strong>Features:</strong>
+            <ul>
+              <li>✅ ফুল স্লিভ জার্সি</li>
+              <li>✅ সামনে: Logo, intake 42-03, CSE</li>
+              <li>✅ পিছনে: Department of CSE, BUBT লিখা থাকবে।</li>
+              <li>✅ পছন্দমত নাম ও নম্বর থাকবে পিছনে।</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 text-center">
+          <a
+            href="https://forms.gle/mdk6X8nN1g4L9Jqu5"
+            target="_blank"
+            class="btn btn-primary btn-lg"
+            role="button"
+          >
+            Register Now
+          </a>
         </div>
       </div>
       <footer class="text-center mt-4">
