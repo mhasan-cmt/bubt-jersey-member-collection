@@ -71,6 +71,18 @@
   </head>
   <body>
     <div class="container py-4">
+      <div class="alert alert-danger text-center" role="alert">
+        <strong>Important:</strong> Please complete the payment before the deadline <strong>6th December</strong>.
+        <button
+        type="button"
+        class="btn"
+        data-bs-toggle="modal"
+        data-bs-target="#infoModal"
+        style="background-color: #28a745; color: #ffffff; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;"
+      >
+        Pay Now
+      </button>
+      </div>
       <div class="row">
         <div class="col-12 text-center">
           <h1>BUBT, Department of CSE (42/03)</h1>
@@ -126,6 +138,58 @@
       <footer class="text-center mt-4">
         &copy; 2024 BUBT, Department of CSE. All rights reserved.
       </footer>
+    </div>
+    <div
+      class="modal fade"
+      id="infoModal"
+      tabindex="-1"
+      aria-labelledby="infoModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header d-flex flex-row justify-content-between">
+            <h5 class="modal-title" id="infoModalLabel">Payment Information</h5>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >X</button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Please make sure to complete the payment by <strong>6th December</strong>.<br> 
+              If you have any questions, feel free to contact "SHAFIN, SAYEM or IMRAN"
+            </p>
+            <ul class="list-unstyled" style="font-family: Arial, sans-serif; font-size: 16px; line-height: 1.8; margin: 20px 0; padding: 0;">
+              <li style="margin-bottom: 10px;">
+                <span style="font-size: 18px; font-weight: bold; color: #007bff;">🔔 Payment Details</span>
+              </li>
+              <li style="margin-left: 20px;">
+                <strong>💵 Cash:</strong> Shafin/Sayem
+              </li>
+              <li style="margin-left: 20px;">
+                <strong>💰 Amount:</strong> 410 Tk. (with Cash-out Charge)
+              </li>
+              <li style="margin-left: 20px;">
+                <strong>📱 Bkash Number:</strong> 
+                <a href="tel:01910503134" style="color: #28a745; text-decoration: none;">01910503134 (Sayem)</a>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script
